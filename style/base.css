@@ -66,3 +66,12 @@ body {
 .hero p {
   font-size: 1.2rem;
 }
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+}
+
+.bg-light {
+  background-color: lightblue;
+}
