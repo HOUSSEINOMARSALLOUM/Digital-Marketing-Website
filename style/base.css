@@ -22,39 +22,32 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
   background: linear-gradient(90deg, #21dadb, #35bbdf, #4d94e6);
-  color: #fff;
+  padding: 1rem 2rem;
 }
 
 .logo {
   height: 50px;
 }
 
-.nav-links {
+.navbar-nav {
   display: flex;
-  list-style: none;
   gap: 1.5rem;
 }
 
-.nav-links a {
+.navbar-nav .nav-link {
   color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.navbar-nav .nav-link:hover {
   color: #21dadb;
 }
 
 .hero {
   padding: 5rem 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #21dadb, #4d94e6);
+  background: linear-gradient(135deg, #35bbdf, #21dadb, #4d94e6);
   color: #fff;
 }
 
@@ -67,39 +60,29 @@ body {
   font-size: 1.2rem;
 }
 
-/* Sections */
 .section {
   padding: 3rem 2rem;
-  background-color: #f1f1f1;
-  text-align: center;
+  color: #333;
 }
 
 .section:nth-child(even) {
-  background-color: #e6f7ff;
+  background-color: #35bbdf;
 }
 
-.service-list {
-  list-style: none;
-  padding: 0;
+.benefit-item {
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.service-list li {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.portfolio-gallery {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-item {
   background-color: #35bbdf;
   padding: 2rem;
-  flex: 1 1 calc(25% - 1rem);
-  text-align: center;
+  flex: 1 1 calc(50% - 1rem);
+  margin-bottom: 1rem;
   color: #fff;
   border-radius: 10px;
   transition: transform 0.3s;
@@ -107,22 +90,6 @@ body {
 
 .portfolio-item:hover {
   transform: scale(1.05);
-}
-
-/* Testimonials */
-.testimonial {
-  font-style: italic;
-  color: #4d94e6;
-  margin: 2rem 0;
-}
-
-/* Contact Form */
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 #contact-form input,
@@ -147,7 +114,6 @@ body {
   background-color: #35bbdf;
 }
 
-/* Footer */
 footer {
   padding: 1.5rem;
   text-align: center;
