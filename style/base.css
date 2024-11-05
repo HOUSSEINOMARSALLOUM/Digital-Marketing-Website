@@ -18,12 +18,15 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #d4edf7;
 }
 
+/* Navbar */
 .navbar {
   background: linear-gradient(90deg, #21dadb, #35bbdf, #4d94e6);
   padding: 1rem 2rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -37,13 +40,16 @@ body {
 
 .navbar-nav .nav-link {
   color: #fff;
-  transition: color 0.3s;
+  transition: color 0.3s, font-weight 0.3s;
+  font-weight: 500;
 }
 
 .navbar-nav .nav-link:hover {
   color: #21dadb;
+  font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
   padding: 5rem 2rem;
   text-align: center;
@@ -52,52 +58,128 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
+/* Section Styling */
 .section {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
+  color: #333;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
   color: #333;
 }
 
 .section:nth-child(even) {
-  background-color: #35bbdf;
+  background: linear-gradient(90deg, #35bbdf, #21dadb);
+  color: #fff;
 }
 
-.benefit-item {
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+/* About Us Section */
+#about {
+  color: #7581f0;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#about ul li {
+  background: #35bbdf;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 1.1rem;
+  text-align: center;
+  color: #fff;
+  width: 200px;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Benefits Section */
+.benefit-item {
+  background: linear-gradient(135deg, #21dadb, #4d94e6);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-item h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .benefit-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Case Studies / Portfolio Items */
 .portfolio-item {
-  background-color: #35bbdf;
+  background: linear-gradient(135deg, #4d94e6, #35bbdf);
   padding: 2rem;
-  flex: 1 1 calc(50% - 1rem);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #fff;
-  border-radius: 10px;
-  transition: transform 0.3s;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item h5 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .portfolio-item:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Contact Form */
 #contact-form input,
 #contact-form textarea {
   padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 #contact-form button {
@@ -107,16 +189,35 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 #contact-form button:hover {
   background-color: #35bbdf;
+  transform: translateY(-2px);
 }
 
+/* Testimonials Section */
+blockquote {
+  border-left: 4px solid #21dadb;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #4d94e6;
+  padding-left: 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+/* Footer */
 footer {
   padding: 1.5rem;
   text-align: center;
-  background-color: #4d94e6;
+  background: linear-gradient(90deg, #21dadb, #35bbdf, #4d94e6);
   color: #fff;
+  font-size: 0.9rem;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
 }
